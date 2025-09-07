@@ -8,7 +8,7 @@ export default function NewsletterCard() {
           </h2>
           <p className="mx-auto mt-6 max-w-lg text-center text-lg text-gray-300">
             Sign up for our free newsletter and stay up-to-date with new
-            products, discounts, etc.
+            products, discounts, etc
           </p>
           <form className="mx-auto mt-10 flex max-w-md gap-x-4">
             <label htmlFor="email-address" className="sr-only">
