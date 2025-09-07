@@ -12,40 +12,33 @@ import {
   PopoverGroup,
   PopoverPanel,
 } from "@headlessui/react";
-import {
-  Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 const products = [
   {
     name: "Rainjackets",
     description: "Get a better understanding of your traffic",
-    href: "#",
-    icon: ChartPieIcon,
+    href: "/products/rainwear-set",
+    icon: "/drop.svg",
   },
   {
     name: "Rainpants",
     description: "Speak directly to your customers",
-    href: "#",
-    icon: CursorArrowRaysIcon,
+    href: "/products/rainwear-set",
+    icon: "/rain.svg",
   },
   {
     name: "Rainsets",
     description: "Your customers’ data will be safe and secure",
-    href: "#",
-    icon: FingerPrintIcon,
+    href: "/products/rainwear-set",
+    icon: "/heavyrain.svg",
   },
   {
     name: "Mittens",
     description: "Connect with third-party tools",
-    href: "#",
-    icon: SquaresPlusIcon,
+    href: "/products/rainwear-set",
+    icon: "/playground.svg",
   },
 ];
 
@@ -82,13 +75,13 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white fixed w-full z-10">
+    <header className="bg-white fixed w-full z-10 shadow-lg">
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Dripp Dropp Rainwear</span>
             <img alt="" src="/logo.svg" className="h-8 w-auto" />
           </a>
@@ -124,9 +117,14 @@ export default function Navbar() {
                     className="group relative flex items-center gap-x-6 rounded-md p-4 text-sm/6 hover:bg-gray-50"
                   >
                     <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                      <item.icon
+                      {/* <item.icon
                         aria-hidden="true"
                         className="size-6 text-gray-600 group-hover:text-indigo-600"
+                      /> */}
+                      <img
+                        aria-hidden="true"
+                        className="size-7 flex-none text-blue-800"
+                        src={item.icon}
                       />
                     </div>
                     <div className="flex-auto">
@@ -145,14 +143,14 @@ export default function Navbar() {
             </PopoverPanel>
           </Popover>
 
-          <a href="#" className="text-sm/6 font-regular text-gray-900">
-            Features
+          <a href="/blog" className="text-sm/6 font-regular text-gray-900">
+            Blog
           </a>
-          <a href="#" className="text-sm/6 font-regular text-gray-900">
-            Marketplace
+          <a href="/about-us" className="text-sm/6 font-regular text-gray-900">
+            About us
           </a>
-          <a href="#" className="text-sm/6 font-regular text-gray-900">
-            Company
+          <a href="/stores" className="text-sm/6 font-regular text-gray-900">
+            Stores
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end gap-2">
@@ -176,7 +174,7 @@ export default function Navbar() {
         <div className="fixed inset-0 z-50" />
         <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Dripp Dropp Rainwear</span>
               <img alt="" src="/logo.svg" className="h-8 w-auto" />
             </a>

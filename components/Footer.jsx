@@ -149,12 +149,12 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24 lg:flex lg:items-center lg:justify-between dark:border-white/10">
+        <div className="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24 lg:flex lg:items-center lg:justify-between">
           <div>
-            <h3 className="text-sm/6 font-semibold text-gray-900 dark:text-white">
+            <h3 className="text-sm/6 font-semibold text-gray-900">
               Subscribe to our free newsletter
             </h3>
-            <p className="mt-2 text-sm/6 text-gray-600 dark:text-gray-400">
+            <p className="mt-2 text-sm/6 text-gray-600">
               Get notified with new products, discounts and other fancy stuff!
             </p>
           </div>
@@ -169,7 +169,7 @@ export default function Footer() {
               required
               placeholder="Enter your email"
               autoComplete="email"
-              className="w-full min-w-0 rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus-visible:outline-gray-900 sm:w-56 sm:text-sm/6 dark:bg-white/5 dark:text-white dark:outline-gray-700 dark:placeholder:text-gray-500 dark:focus-visible:outline-indigo-500"
+              className="w-full min-w-0 rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus-visible:outline-gray-900 sm:w-56 sm:text-sm/6"
             />
             <div className="mt-4 sm:ml-4 sm:mt-0 sm:shrink-0">
               <button
@@ -194,7 +194,7 @@ export default function Footer() {
               </a>
             ))}
           </div>
-          <p className="mt-8 text-sm/6 text-gray-600 md:order-1 md:mt-0 dark:text-gray-400">
+          <p className="mt-8 text-sm/6 text-gray-600 md:order-1 md:mt-0">
             &copy; 2025 Dripp Dropp Rainwear example website
           </p>
         </div>
