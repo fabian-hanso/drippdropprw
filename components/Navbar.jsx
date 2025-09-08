@@ -75,7 +75,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white fixed w-full z-10 shadow-lg">
+    <header className="bg-white fixed w-full z-10 shadow-md">
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
@@ -98,7 +98,7 @@ export default function Navbar() {
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-regular text-gray-900">
+            <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-regular text-gray-900 focus:outline-none">
               Products
               <ChevronDownIcon
                 aria-hidden="true"
@@ -108,7 +108,7 @@ export default function Navbar() {
 
             <PopoverPanel
               transition
-              className="absolute -left-1/2 z-10 mt-3 w-screen max-w-md -translate-x-1/2 overflow-hidden rounded-lg bg-white shadow-lg outline outline-1 outline-gray-900/5 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
+              className="absolute -left-1/2 z-10 mt-3 w-screen max-w-md -translate-x-1/2 overflow-hidden rounded-lg bg-white shadow-lg outline-1 outline-gray-900/5 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
             >
               <div className="p-4">
                 {products.map((item) => (
@@ -117,10 +117,6 @@ export default function Navbar() {
                     className="group relative flex items-center gap-x-6 rounded-md p-4 text-sm/6 hover:bg-gray-50"
                   >
                     <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                      {/* <item.icon
-                        aria-hidden="true"
-                        className="size-6 text-gray-600 group-hover:text-indigo-600"
-                      /> */}
                       <img
                         aria-hidden="true"
                         className="size-7 flex-none text-blue-800"
