@@ -96,7 +96,7 @@ export default function DetailsPage() {
       <div className="pb-16 pt-6 sm:pb-24">
         <nav
           aria-label="Breadcrumb"
-          className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
+          className="mx-auto max-w-7xl px-6 sm:px-6 lg:px-8"
         >
           <ol role="list" className="flex items-center space-x-4">
             {product.breadcrumbs.map((breadcrumb) => (
@@ -132,7 +132,7 @@ export default function DetailsPage() {
             </li>
           </ol>
         </nav>
-        <div className="mx-auto mt-8 max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+        <div className="mx-auto mt-8 max-w-2xl px-6 sm:px-6 lg:max-w-7xl lg:px-8">
           <div className="lg:grid lg:auto-rows-min lg:grid-cols-12 lg:gap-x-8">
             <div className="lg:col-span-5 lg:col-start-8">
               <div className="flex justify-between">

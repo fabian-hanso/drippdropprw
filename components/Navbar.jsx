@@ -187,7 +187,7 @@ export default function Navbar() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
+                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-regular text-gray-900 hover:bg-gray-50">
                     Products
                     <ChevronDownIcon
                       aria-hidden="true"
@@ -209,25 +209,25 @@ export default function Navbar() {
                 </Disclosure>
                 <a
                   href="/blog"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-regular text-gray-900 hover:bg-gray-50"
                 >
                   Blog
                 </a>
                 <a
                   href="/about-us"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-regular text-gray-900 hover:bg-gray-50"
                 >
                   About us
                 </a>
                 <a
                   href="/stores"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-regular text-gray-900 hover:bg-gray-50"
                 >
                   Stores
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-regular text-gray-900 hover:bg-gray-50"
                 >
                   Imprint
                 </a>

@@ -18,7 +18,7 @@ export default function Hero() {
       slidesPerView={1}
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}
-      className="w-full md:h-[600px] h-96 relative"
+      className="w-full md:h-[600px] xl:h-[800px] h-96 relative"
       autoplay
     >
       <SwiperSlide className="relative w-full h-full">
