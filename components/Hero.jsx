@@ -43,7 +43,7 @@ export default function Hero() {
         />
       </SwiperSlide>
 
-      <div className="absolute bottom-6 left-1/2 -translateX-1/2 z-10">
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10">
         <ChevronDoubleDownIcon className="w-8 h-8 text-white animate-bounce duration-300" />
       </div>
     </Swiper>
