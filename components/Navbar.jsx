@@ -200,7 +200,7 @@ export default function Navbar() {
                         key={item.name}
                         as="a"
                         href={item.href}
-                        className="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
+                        className="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-regular text-gray-900 hover:bg-gray-50"
                       >
                         {item.name}
                       </DisclosureButton>
@@ -224,6 +224,12 @@ export default function Navbar() {
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   Stores
+                </a>
+                <a
+                  href="#"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >
+                  Imprint
                 </a>
               </div>
               <div className="py-6 flex gap-2">
